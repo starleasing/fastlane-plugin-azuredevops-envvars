@@ -17,7 +17,7 @@ module Fastlane
       end
 
       def self.description
-        "A Fastlane plugin that provides passthrough access to AzureDevOps environment variables."
+        "A Fastlane plugin that provides passthrough access to AzureDevOps environment variables"
       end
 
       def self.authors
@@ -26,19 +26,19 @@ module Fastlane
 
 
       def self.details
-        "A Fastlane plugin that provides passthrough access to AzureDevOps environment variables."
+        "A Fastlane plugin that provides passthrough access to AzureDevOps environment variables"
       end
 
       def self.available_options
         [
           FastlaneCore::ConfigItem.new(key: :env_variable_name,
                                env_name: "FL_AZDO_ENV_VARIABLE_NAME",
-                               description: "The Azure DevOps environment variable to access.",
+                               description: "The Azure DevOps environment variable to access",
                                optional: false,
                                type: String),
           FastlaneCore::ConfigItem.new(key: :env_default_value,
                                env_name: "FL_AZDO_ENV_DEFAULT_VALUE",
-                               description: "If the environment variable is not found, return this value instead.",
+                               description: "If the environment variable is not found, return this value instead",
                                optional: true,
                                type: String)
 
