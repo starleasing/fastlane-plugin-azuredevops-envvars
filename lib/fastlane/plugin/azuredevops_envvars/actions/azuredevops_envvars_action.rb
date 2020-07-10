@@ -5,11 +5,16 @@ module Fastlane
   module Actions
     class AzuredevopsEnvvarsAction < Action
       def self.run(params)
+        UI.message("Checking for environment variable [#{params[:env_variable_name]}]")
         if params[:env_variable_name] && ENV.key?(params[:env_variable_name])
-            return ENV[params[:env_variable_name]]
+          UI.message("Using [#{params[:env_variable_name]}]")
+          return ENV[params[:env_variable_name]]
         end
 
+        UI.message("[#{params[:env_variable_name]}] not found in Environment")
+
         if params[:env_default_value]
+          UI.message("Using default value [#{params[:env_default_value]}]")
           return params[:env_default_value]
         end
 
