@@ -7,8 +7,8 @@ require 'fastlane/plugin/azuredevops_envvars/version'
 Gem::Specification.new do |spec|
   spec.name          = 'fastlane-plugin-azuredevops_envvars'
   spec.version       = Fastlane::AzuredevopsEnvvars::VERSION
-  spec.author        = 'Calvin A. Allen'
-  spec.email         = 'calvin.allen@starleasing.com'
+  spec.author        = 'Star Leasing Company'
+  spec.email         = 'developers@starleasing.com'
 
   spec.summary       = 'A Fastlane plugin that provides passthrough access to AzureDevOps environment variables'
   spec.homepage      = "https://github.com/starleasing/fastlane-plugin-azuredevops-envvars"
